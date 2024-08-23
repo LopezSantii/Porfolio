@@ -118,7 +118,7 @@ export const DATA = {
     },
     {
       title: "StockMaster",
-      href: "#",
+      href: "https://control-de-stock-frontend.vercel.app/dashboard",
       dates: "Ago 2024 - Present",
       active: true,
       description:
@@ -135,7 +135,7 @@ export const DATA = {
       links: [
         {
           type: "Sitio Web",
-          href: "#",
+          href: "https://control-de-stock-frontend.vercel.app/dashboard",
           icon: <Icons.globe className="size-3" />,
         },
         {
