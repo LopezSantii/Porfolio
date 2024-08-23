@@ -4,9 +4,9 @@ import { HomeIcon } from "lucide-react";
 export const DATA = {
   name: "Santiago Lopez",
   initials: "SL",
-  url: "https://dillion.io",
+  url: "#",
   location: "Buenos Aires,ARG",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  locationLink: "#",
   description: "Frontend Developer",
   summary: `Soy un apasionado desarrollador front end con una obsesión por el diseño limpio y funcional. Mi amor por el código 💻 es solo igualado por mi pasión por los sneakers 👟 y el skate 🛹, que me han enseñado a apreciar tanto la creatividad como la precisión en cada truco y en cada línea de código.
   `,
