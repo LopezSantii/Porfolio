@@ -70,8 +70,9 @@ export default function Page() {
             delay={BLUR_FADE_DELAY * 10}
           >
             <div className="max-h-[15rem] md:max-w-[20rem] max-w-[18rem] flex flex-wrap gap-3 items-center">
-              {DATA.skills1.map((skills) => (
+              {DATA.skills1.map((skills, index) => (
                 <div
+                  key={index}
                   className={cn(
                     "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in dark:border-white/5 dark:bg-neutral-900"
                   )}
@@ -83,7 +84,7 @@ export default function Page() {
               ))}
             </div>
             <div className="w-[14rem]">
-              <IconCloud iconSlugs={DATA.skills} />
+              <IconCloud iconSlugs={[...DATA.skills]} />
             </div>
           </BlurFade>
         </section>
