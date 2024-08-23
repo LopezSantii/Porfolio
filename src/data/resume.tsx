@@ -10,7 +10,7 @@ export const DATA = {
   description: "Frontend Developer",
   summary: `Soy un apasionado desarrollador front end con una obsesión por el diseño limpio y funcional. Mi amor por el código 💻 es solo igualado por mi pasión por los sneakers 👟 y el skate 🛹, que me han enseñado a apreciar tanto la creatividad como la precisión en cada truco y en cada línea de código.
   `,
-  avatarUrl: "./public/me.jpg",
+  avatarUrl: "/me.JPG",
 
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
