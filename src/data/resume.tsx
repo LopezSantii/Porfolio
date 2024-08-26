@@ -47,6 +47,14 @@ export const DATA = {
     {
       school: "Coder House",
       href: "https://www.coderhouse.com/ar/certificados/6544302f5347d0001941c8f8?lang=es",
+      degree: "Desarrollo Backend",
+      logoUrl: "/coderhouse.png",
+      start: "06/2024",
+      end: "Actualidad",
+    },
+    {
+      school: "Coder House",
+      href: "https://www.coderhouse.com/ar/certificados/6544302f5347d0001941c8f8?lang=es",
       degree: "Desarrollo Frontend",
       logoUrl: "/coderhouse.png",
       start: "03/2023",
