@@ -4,7 +4,6 @@ import { HomeIcon } from "lucide-react";
 export const DATA = {
   name: "Santiago Lopez",
   initials: "SL",
-  url: "#",
   location: "Buenos Aires,ARG",
   locationLink: "#",
   description: "Frontend Developer",
@@ -87,36 +86,6 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Protec Group",
-      href: "https://protecgroup.com.ar/",
-      dates: "Feb 2024 - Marz 2024",
-      active: true,
-      description:
-        "Sitio web Ecommerce para una empresa líder en productos de protección personal.",
-      technologies: [
-        "React.js",
-        "Javascript",
-        "Firebase",
-        "Bootstrap",
-        "Toastify",
-      ],
-      links: [
-        {
-          type: "Sitio Web",
-          href: "https://protecgroup.com.ar/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Repositorio",
-          href: "https://github.com/LopezSantii/protecgroup",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://res.cloudinary.com/djr02xjsb/video/upload/v1724377153/protec_Hecho_con_Clipchamp_k4n9pb.mp4",
-    },
-    {
       title: "StockMaster",
       href: "https://control-de-stock-frontend.vercel.app/dashboard",
       dates: "Ago 2024 - Present",
@@ -147,6 +116,81 @@ export const DATA = {
       image: "",
       video:
         "https://res.cloudinary.com/djr02xjsb/video/upload/v1724377200/stock_Hecho_con_Clipchamp_m6ygbb.mp4",
+    },
+    {
+      title: "Protec Group",
+      href: "https://protecgroup.com.ar/",
+      dates: "Feb 2024 - Marz 2024",
+      active: true,
+      description:
+        "Sitio web Ecommerce para una empresa líder en productos de protección personal.",
+      technologies: [
+        "React.js",
+        "Javascript",
+        "Firebase",
+        "Bootstrap",
+        "Toastify",
+      ],
+      links: [
+        {
+          type: "Sitio Web",
+          href: "https://protecgroup.com.ar/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Repositorio",
+          href: "https://github.com/LopezSantii/protecgroup",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://res.cloudinary.com/djr02xjsb/video/upload/v1724377153/protec_Hecho_con_Clipchamp_k4n9pb.mp4",
+    },
+
+    {
+      title: "TaTeTi",
+      href: "https://ta-te-ti-github-io.vercel.app/",
+      dates: "Dic 2023",
+      description: "Videojuego de tres en linea",
+      active: true,
+      technologies: ["React.js", "Javascript", "Css"],
+      links: [
+        {
+          type: "Sitio Web",
+          href: "https://ta-te-ti-github-io.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Repositorio",
+          href: "https://github.com/LopezSantii/TaTeTi.github.io",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/tateti.webp",
+      video: "",
+    },
+    {
+      title: "Salud Gourmet",
+      href: "https://saludgourmet.com.ar/",
+      dates: "Dic 2023",
+      description: "Landing Page para la empresa Salud Gourmet",
+      active: true,
+      technologies: ["Html", "Css", "Bootstrap"],
+      links: [
+        {
+          type: "Sitio Web",
+          href: "https://saludgourmet.com.ar/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Repositorio",
+          href: "https://github.com/LopezSantii/SaludGourmet.github.io/tree/master",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/saludgourmet.png",
+      video: "",
     },
   ],
 } as const;
