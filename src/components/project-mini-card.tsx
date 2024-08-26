@@ -59,7 +59,7 @@ export function ProjectMiniCard({
                 alt={title}
                 width={500}
                 height={300}
-                className="h-11 w-full overflow-hidden object-cover object-top  rounded-full"
+                className="md:h-11 h-8 w-full overflow-hidden object-cover object-top  rounded-full"
               />
             )}
           </Link>
