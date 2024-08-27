@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import IconCloud from "@/components/magicui/icon-cloud";
 import Markdown from "react-markdown";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
+import { ProjectMediumCard } from "@/components/project-medium-card";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -106,11 +107,18 @@ export default function Page() {
                 </div>
               </div>
             </BlurFade>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 mx-auto">
               {DATA.projects.map((project, id) => (
                 <BlurFade
                   key={project.title}
                   delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                  className={
+                    id <= 1
+                      ? "col-span-1 max-w-[800px]"
+                      : id <= 3
+                      ? "col-span-1 max-w-[800px]"
+                      : "sm:col-span-2"
+                  }
                 >
                   {id <= 1 ? (
                     <ProjectCard
@@ -123,8 +131,19 @@ export default function Page() {
                       video={project.video}
                       links={project.links}
                     />
-                  ) : (
+                  ) : id <= 3 ? (
                     <ProjectMiniCard
+                      href={project.href}
+                      title={project.title}
+                      description={project.description}
+                      dates={project.dates}
+                      tags={project.technologies}
+                      image={project.image}
+                      video={project.video}
+                      links={project.links}
+                    />
+                  ) : (
+                    <ProjectMediumCard
                       href={project.href}
                       title={project.title}
                       description={project.description}

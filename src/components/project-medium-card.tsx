@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import Markdown from "react-markdown";
 
 interface Props {
   title: string;
@@ -27,7 +28,7 @@ interface Props {
   className?: string;
 }
 
-export function ProjectMiniCard({
+export function ProjectMediumCard({
   title,
   href,
   dates,
@@ -37,14 +38,15 @@ export function ProjectMiniCard({
   image,
   links,
   className,
+  description,
 }: Props) {
   return (
     <Card
       className={
-        "flex sm:flex-row flex-col sm:items-center sm:justify-between overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "flex sm:flex-row flex-col justify-between overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
-      <div className="order-2 sm:order-1 w-[100%]">
+      <div className="order-2 sm:order-1">
         <CardHeader className="px-2">
           <div className="pt-2 flex gap-3 items-center justify-start">
             <Link
@@ -68,7 +70,19 @@ export function ProjectMiniCard({
             <CardTitle className="text-base">{title}</CardTitle>
           </div>
         </CardHeader>
-        <CardContent className="flex flex-col px-2">
+        <CardContent className="px-1 sm:px-2">
+          <div className="px-1">
+            <time className="font-sans text-xs">{dates}</time>
+            <div className="hidden font-sans text-xs underline print:visible">
+              {link
+                ?.replace("https://", "")
+                .replace("www.", "")
+                .replace("/", "")}
+            </div>
+            <Markdown className="pt-2 prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+              {description}
+            </Markdown>
+          </div>
           {tags && tags.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1">
               {tags?.map((tag) => (
