@@ -114,7 +114,7 @@ export function ProjectMediumCard({
             loop
             muted
             playsInline
-            className="pointer-events-none h-full" // needed because random black line at bottom of video
+            className="pointer-events-none mx-auto max-h-30 w-full object-cover object-top"
           />
         )}
       </Link>
