@@ -61,7 +61,8 @@ export function ProjectMiniCard({
                   alt={title}
                   width={500}
                   height={300}
-                  className="h-8 w-full overflow-hidden object-cover object-top rounded-full"
+                  className="h-8 w-8 md:w-full overflow-hidden object-cover object-top rounded-full"
+                  style={{ maxWidth: "100%" }}
                 />
               )}
             </Link>

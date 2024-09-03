@@ -116,8 +116,8 @@ export default function Page() {
                     id <= 1
                       ? `col-span-2 md:col-span-1 max-w-[800px] order-${id}`
                       : id <= 3
-                      ? `col-span-1 max-w-[800px] order-${id}`
-                      : `col-span-2 order-${id - 3}`
+                      ? `col-span-1 max-w-[800px] order-${id} md:order-${id}`
+                      : `col-span-2 order-${id - 3} md:order-${id}`
                   }
                 >
                   {id <= 1 ? (
