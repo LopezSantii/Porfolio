@@ -86,7 +86,7 @@ export function ProjectMiniCard({
         </CardContent>
         <CardFooter className="px-2 pb-2">
           {links && links.length > 0 && (
-            <div className="flex flex-row items-start gap-1">
+            <div className="flex flex-col md:flex-row  items-start gap-1">
               {links?.map((link, idx) => (
                 <Link
                   className="shadow-md"
