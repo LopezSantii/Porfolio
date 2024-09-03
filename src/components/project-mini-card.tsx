@@ -51,7 +51,7 @@ export function ProjectMiniCard({
               target="_blanc"
               href={href || "#"}
               className={cn(
-                "sm:block cursor-pointer border  rounded-full bg-muted-background dark:bg-foreground hidden",
+                "cursor-pointer border rounded-full bg-muted-background dark:bg-foreground",
                 className
               )}
             >
@@ -61,7 +61,7 @@ export function ProjectMiniCard({
                   alt={title}
                   width={500}
                   height={300}
-                  className="md:h-11 h-8 w-full overflow-hidden object-cover object-top  rounded-full"
+                  className="h-8 w-full overflow-hidden object-cover object-top rounded-full"
                 />
               )}
             </Link>

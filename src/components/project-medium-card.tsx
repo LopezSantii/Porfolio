@@ -35,7 +35,6 @@ export function ProjectMediumCard({
   video,
   tags,
   link,
-  image,
   links,
   className,
   description,
@@ -48,30 +47,8 @@ export function ProjectMediumCard({
     >
       <div className="order-2 sm:order-1">
         <CardHeader className="px-2">
-          <div className="pt-2 flex gap-3 items-center justify-start">
-            <Link
-              target="_blanc"
-              href={href || "#"}
-              className={cn(
-                "sm:block cursor-pointer border  rounded-full bg-muted-background dark:bg-foreground hidden",
-                className
-              )}
-            >
-              {image && (
-                <Image
-                  src={image}
-                  alt={title}
-                  width={500}
-                  height={300}
-                  className="md:h-11 h-8 w-full overflow-hidden object-cover object-top  rounded-full"
-                />
-              )}
-            </Link>
-            <CardTitle className="text-base">{title}</CardTitle>
-          </div>
-        </CardHeader>
-        <CardContent className="px-1 sm:px-2">
-          <div className="px-1">
+          <div className="space-y-1">
+            <CardTitle className="mt-1 text-base">{title}</CardTitle>
             <time className="font-sans text-xs">{dates}</time>
             <div className="hidden font-sans text-xs underline print:visible">
               {link
@@ -79,10 +56,12 @@ export function ProjectMediumCard({
                 .replace("www.", "")
                 .replace("/", "")}
             </div>
-            <Markdown className="pt-2 prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+            <Markdown className="prose min-h-11 max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
               {description}
             </Markdown>
           </div>
+        </CardHeader>
+        <CardContent className="mt-auto flex flex-col px-2">
           {tags && tags.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1">
               {tags?.map((tag) => (
@@ -99,7 +78,7 @@ export function ProjectMediumCard({
         </CardContent>
         <CardFooter className="px-2 pb-2">
           {links && links.length > 0 && (
-            <div className="flex flex-row items-start gap-1">
+            <div className="flex flex-row flex-wrap items-start gap-1">
               {links?.map((link, idx) => (
                 <Link
                   className="shadow-md"
@@ -124,7 +103,7 @@ export function ProjectMediumCard({
         target="_blanc"
         href={href || "#"}
         className={cn(
-          "block cursor-pointer order-1  sm:order-2 sm:w-[50%] w-full",
+          "cursor-pointer order-1  sm:order-2 sm:w-[50%] w-full",
           className
         )}
       >
@@ -135,7 +114,7 @@ export function ProjectMediumCard({
             loop
             muted
             playsInline
-            className="pointer-events-none max-h-30 object-cover object-top" // needed because random black line at bottom of video
+            className="pointer-events-none h-full" // needed because random black line at bottom of video
           />
         )}
       </Link>
