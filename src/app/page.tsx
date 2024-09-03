@@ -114,10 +114,10 @@ export default function Page() {
                   delay={BLUR_FADE_DELAY * 12 + id * 0.05}
                   className={
                     id <= 1
-                      ? `col-span-2 md:col-span-1 max-w-[800px] order-${id}`
-                      : id <= 3
-                      ? `col-span-1 max-w-[800px] order-${id} md:order-${id}`
-                      : `col-span-2 order-${id - 3} md:order-${id}`
+                      ? `col-span-2 md:col-span-1 max-w-[800px]`
+                      : id >= 3
+                      ? `col-span-1 max-w-[800px]`
+                      : `col-span-2`
                   }
                 >
                   {id <= 1 ? (
@@ -131,7 +131,7 @@ export default function Page() {
                       video={project.video}
                       links={project.links}
                     />
-                  ) : id <= 3 ? (
+                  ) : id >= 3 ? (
                     <ProjectMiniCard
                       href={project.href}
                       title={project.title}

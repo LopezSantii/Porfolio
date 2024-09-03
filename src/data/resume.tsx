@@ -125,6 +125,7 @@ export const DATA = {
       video:
         "https://res.cloudinary.com/djr02xjsb/video/upload/v1724377200/stock_Hecho_con_Clipchamp_m6ygbb.mp4",
     },
+
     {
       title: "Protec Group",
       href: "https://protecgroup.com.ar/",
@@ -155,7 +156,29 @@ export const DATA = {
       video:
         "https://res.cloudinary.com/djr02xjsb/video/upload/v1724377153/protec_Hecho_con_Clipchamp_k4n9pb.mp4",
     },
-
+    {
+      title: "Groeien",
+      href: "https://groeien.vercel.app/",
+      dates: "Ago 2023",
+      description: "Landing Page con elementos 3D para la empresa Groeien",
+      active: true,
+      technologies: ["React.js", "Javascript", "NextUi", "TailwindCSS"],
+      links: [
+        {
+          type: "Sitio Web",
+          href: "https://groeien.vercel.app//",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Repositorio",
+          href: "https://github.com/LopezSantii/Groeien",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/groeien.jpg",
+      video:
+        "https://res.cloudinary.com/djr02xjsb/video/upload/v1724777702/groeien_qra6xc.mp4",
+    },
     {
       title: "TaTeTi",
       href: "https://ta-te-ti-github-io.vercel.app/",
@@ -199,29 +222,6 @@ export const DATA = {
       ],
       image: "/saludgourmet.png",
       video: "",
-    },
-    {
-      title: "Groeien",
-      href: "https://groeien.vercel.app/",
-      dates: "Ago 2023",
-      description: "Landing Page con elementos 3D para la empresa Groeien",
-      active: true,
-      technologies: ["React.js", "Javascript", "NextUi", "TailwindCSS"],
-      links: [
-        {
-          type: "Sitio Web",
-          href: "https://groeien.vercel.app//",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Repositorio",
-          href: "https://github.com/LopezSantii/Groeien",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/groeien.jpg",
-      video:
-        "https://res.cloudinary.com/djr02xjsb/video/upload/v1724777702/groeien_qra6xc.mp4",
     },
   ],
 } as const;
